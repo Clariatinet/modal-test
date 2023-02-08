@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const MyModal = ({ setModalButton }) => {
   const closeModal = () => {
     setModalButton(false);
   };
-  return <StyledModal onClick={closeModal}>모달창입니다.</StyledModal>;
+
+  return (
+    <div>
+      <StyledModal onClick={closeModal}>모달창입니다.</StyledModal>
+    </div>
+  );
 };
 
 export default MyModal;
